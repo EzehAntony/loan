@@ -2,9 +2,9 @@ import React from "react";
 import styles from "./loan.module.css";
 import { Ubuntu, Commissioner, Fresca } from "@next/font/google";
 
-const ubuntu = Ubuntu({ weight: "500" });
-const commissioner = Commissioner({ weight: "400" });
-const fresca = Fresca({ weight: "400" });
+const ubuntu = Ubuntu({ weight: "500", subsets: ["latin"] });
+const commissioner = Commissioner({ weight: "400", subsets: ["latin"] });
+const fresca = Fresca({ weight: "400", subsets: ["latin"] });
 
 function loan() {
   return (
@@ -89,9 +89,6 @@ function loan() {
         <h2 className={ubuntu.className}>
           Fair and personal loans and car refinancing
         </h2>
-
-
-
 
         <section>
           <div>
