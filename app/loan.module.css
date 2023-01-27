@@ -1,0 +1,384 @@
+.loan {
+  background-color: white;
+  min-height: 100vh;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.loan header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  padding: 0 5%;
+}
+
+.loan header h1 {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.loan nav {
+  margin-left: 20px;
+  border: 2px soid black;
+}
+
+.loan nav ul {
+  display: flex;
+  border-left: 2px solid gray;
+}
+
+.loan nav ul li {
+  list-style: none;
+  margin: 0 10px;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: gray;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  padding: 0 5%;
+}
+
+.hero div {
+  width: 50%;
+}
+
+.hero .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero .left h1 {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 5vh;
+  max-width: 500px;
+}
+
+.hero .left h1 span {
+  color: #65b489;
+}
+.hero .left button {
+  background-color: black;
+  border: 0;
+  border-radius: 50px;
+  padding: 15px 20px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.hero .left button p {
+  font-size: 10px;
+}
+
+.hero .right {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 50px);
+}
+
+.hero .right img {
+  width: 90%;
+  max-width: 450px;
+  position: absolute;
+  top: 25px;
+  border-radius: 20px;
+}
+
+.left .col2 {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero .left li {
+  width: 49%;
+  margin: 10px 0;
+  list-style: none;
+  font-weight: 600;
+}
+
+.apply {
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.apply > h2 {
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.apply > p {
+  color: gray;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.cards {
+  width: 90%;
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  width: 30%;
+  max-width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  padding: 3%;
+  cursor: pointer;
+}
+
+.card:nth-of-type(1) {
+  background-color: #e3ffe7;
+}
+.card:nth-of-type(2) {
+  background-color: #e8e3ff;
+}
+.card:nth-of-type(3) {
+  background-color: #ffe1e1;
+}
+
+.card img {
+  width: 30%;
+  max-width: 60px;
+  background-color: red;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.card:nth-of-type(1) img {
+  background-color: #bbffc5;
+}
+.card:nth-of-type(2) img {
+  background-color: #c5b8ff;
+}
+.card:nth-of-type(3) img {
+  background-color: #ffc7c7;
+}
+
+.card p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card .text h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.fair {
+  background-color: #020121;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px 5%;
+}
+
+.fair h2 {
+  font-weight: 600;
+  text-align: center;
+  max-width: 320px;
+}
+
+.loan section {
+  min-height: 330px;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.loan section div {
+  width: 30%;
+  min-height: 200px;
+  background-color: #131234;
+  padding: 5%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.loan section div span {
+  color: yellow;
+}
+
+.loan section div:nth-of-type(1) {
+  width: 55%;
+}
+.loan section div:nth-of-type(2) {
+  width: 55%;
+}
+.loan section div:nth-of-type(3) {
+  width: 40%;
+  position: absolute;
+  right: 0;
+  height: 420px;
+  background-color: #918eff;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.loan section div:nth-of-type(3) * {
+  margin: 10px 0;
+}
+
+.loan section div:nth-of-type(3) p {
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .mobile {
+    display: none;
+  }
+
+  .loan {
+  }
+
+  .loan header {
+    position: relative;
+  }
+
+  .hero {
+    height: max-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero .left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+  }
+
+  .hero .right {
+    width: 100%;
+    height: min-content;
+    display: none;
+  }
+
+  .hero .right img {
+    position: relative;
+    margin: 0;
+    top: 0;
+    width: 50%;
+    max-width: 300px;
+  }
+
+  .hero .left h1 {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 30px;
+    max-width: 400px;
+    margin: 10px 0;
+  }
+
+  .hero .left .col2 {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .hero .left li {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px 0 10px 0;
+    font-size: 12px;
+    width: 30%;
+    margin: 5px;
+    list-style: none;
+    font-weight: 600;
+    background-color: black;
+  }
+
+  .hero .left li:nth-of-type(1) {
+    background-color: #fff9e3;
+  }
+  .hero .left li:nth-of-type(2) {
+    background-color: #fbe3ff;
+  }
+  .hero .left li:nth-of-type(3) {
+    background-color: #e1fcff;
+  }
+
+  .cards {
+    width: 90%;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 250px;
+    height: 290px;
+    margin: 10px 0;
+  }
+
+  .loan .fair h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .loan section div {
+    width: 90%;
+    min-height: 150px;
+    background-color: #131234;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .loan section div:nth-of-type(1) {
+    width: 100%;
+  }
+  .loan section div:nth-of-type(2) {
+    width: 100%;
+  }
+  .loan section div:nth-of-type(3) {
+    width: 100%;
+    position: relative;
+    height: 200px;
+    background-color: #918eff;
+  }
+}
