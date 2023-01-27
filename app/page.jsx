@@ -38,7 +38,7 @@ function loan() {
           </div>
         </div>
         <div className={styles.right}>
-          <img src="/me.jpg" alt="" />
+          <img src="/man.png" alt="" />
         </div>
       </div>
 
@@ -50,7 +50,7 @@ function loan() {
 
         <div className={styles.cards}>
           <div className={styles.card}>
-            <img src="/bellBlack.svg" alt="" />
+            <img src="/card-send.png" alt="" />
             <div className={styles.text}>
               <h3 className={ubuntu.className}>Pay off with credit cards</h3>
               <p className={ubuntu.className}>
@@ -61,7 +61,7 @@ function loan() {
             </div>
           </div>
           <div className={styles.card}>
-            <img src="/bellBlack.svg" alt="" />
+            <img src="/dollar-square.png" alt="" />
             <div className={styles.text}>
               <h3 className={ubuntu.className}>Consolidate debt</h3>
               <p className={ubuntu.className}>
@@ -72,7 +72,7 @@ function loan() {
             </div>
           </div>
           <div className={styles.card}>
-            <img src="/bellBlack.svg" alt="" />
+            <img src="/archive.png" alt="" />
             <div className={styles.text}>
               <h3 className={ubuntu.className}>Something else</h3>
               <p className={ubuntu.className}>
@@ -98,17 +98,41 @@ function loan() {
             </p>
           </div>
           <div>
-            <img src="/bell.svg" alt="" />
+            <img src="/card-send.png" alt="" />
             <p className={ubuntu.className}> Easy, transparent process</p>
           </div>
           <div>
-            <img src="/bell.svg" alt="" />
+            <img src="/dollar-square.png" alt="" />
             <h2 className={ubuntu.className}>No payment fees</h2>
             <p className={ubuntu.className}>
               You may pay off part or all the loan at any time with no fee
             </p>
+            <img src="z.png" className={styles.z} alt="" />
           </div>
         </section>
+      </div>
+
+      <div className={styles.services}>
+        <h2>Our services are fast</h2>
+
+        <div className="column1">
+          <div className="left">
+            <img src="/woman.png" alt="" />
+          </div>
+          <div className="right">
+            <h2>Check your rate</h2>
+            <div className="group">
+              <img src="/card-send.png" alt="" />
+              <p>Fill out rhe form to check your rate in minutes</p>
+            </div>
+            <div className="group">
+              <img src="/dollar-square.png" alt="" />
+              <p>Fast finds. Fast gains</p>
+            </div>
+            <button>Check your rate</button>
+          </div>
+        </div>
+        <div className="column2"></div>
       </div>
     </div>
   );
