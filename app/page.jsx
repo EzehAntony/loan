@@ -2,9 +2,9 @@ import React from "react";
 import styles from "./loan.module.css";
 import { Ubuntu, Commissioner, Fresca } from "@next/font/google";
 
-const ubuntu = Ubuntu({ weight: "500", subsets: ["latin"] });
-const commissioner = Commissioner({ weight: "400", subsets: ["latin"] });
-const fresca = Fresca({ weight: "400", subsets: ["latin"] });
+const ubuntu = Ubuntu({ weight: "500", subsets: ["cyrillic"] });
+const commissioner = Commissioner({ weight: "400", subsets: ["cyrillic"] });
+const fresca = Fresca({ weight: "400", subsets: ["latin-ext"] });
 
 function loan() {
   return (
@@ -113,27 +113,82 @@ function loan() {
       </div>
 
       <div className={styles.services}>
-        <h2>Our services are fast</h2>
+        <h2 className={ubuntu.className}>Our services are fast</h2>
 
-        <div className="column1">
-          <div className="left">
+        <div className={styles.column1}>
+          <div className={styles.left}>
             <img src="/woman.png" alt="" />
           </div>
-          <div className="right">
-            <h2>Check your rate</h2>
-            <div className="group">
+          <div className={styles.right}>
+            <h2 className={ubuntu.className}>Check your rate</h2>
+            <div className={styles.group}>
               <img src="/card-send.png" alt="" />
-              <p>Fill out rhe form to check your rate in minutes</p>
+              <p className={ubuntu.className}>
+                Fill out rhe form to check your rate in minutes
+              </p>
             </div>
-            <div className="group">
+            <div className={styles.group}>
               <img src="/dollar-square.png" alt="" />
-              <p>Fast finds. Fast gains</p>
+              <p className={ubuntu.className}>Fast finds. Fast gains</p>
             </div>
-            <button>Check your rate</button>
+            <button className={ubuntu.className}>Check your rate</button>
           </div>
         </div>
-        <div className="column2"></div>
+
+        <div className={styles.column1}>
+          <div className={styles.right}>
+            <h2 className={ubuntu.className}>Verify your information</h2>
+            <div className={styles.group}>
+              <img src="/card-send.png" alt="" />
+              <p className={ubuntu.className}>
+                Most browsers are instantky improved
+              </p>
+            </div>
+            <div className={styles.group}>
+              <img src="/dollar-square.png" alt="" />
+              <p className={ubuntu.className}>
+                Most browsers are instantky improved
+              </p>
+            </div>
+            <div className={styles.group}>
+              <img src="/dollar-square.png" alt="" />
+              <p className={ubuntu.className}>
+                Most browsers are instantky improved
+              </p>
+            </div>
+          </div>
+
+          <div className={styles.left}>
+            <img src="/man2.png" alt="" />
+          </div>
+        </div>
       </div>
+
+      <div className={styles.foryou}>
+        <div className={styles.inner}>
+          <h2 className={ubuntu.className}>Is UND right for you?</h2>
+          <p className={ubuntu.className}>
+            You may pay off part or all of the loan at any time with no fee
+          </p>
+          <button className={ubuntu.className}>Check your rate </button>
+          <img src="/z.png" alt="" />
+          <img src="/z.png" alt="" />
+        </div>
+      </div>
+
+      <footer>
+        <h1 className={ubuntu.className}>UND SERVICES</h1>
+        <div className={styles.socials}>
+          <img src="/facebook.png" alt="" />
+          <img src="/twitter.png" alt="" />
+          <img src="/instagram.png" alt="" />
+        </div>
+        <ul>
+          <li className={ubuntu.className}>cookies</li>
+          <li className={ubuntu.className}>privacy policy</li>
+          <li className={ubuntu.className}>terms of service</li>
+        </ul>
+      </footer>
     </div>
   );
 }

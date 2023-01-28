@@ -73,6 +73,7 @@
 }
 .hero .left button {
   background-color: black;
+  color: white;
   border: 0;
   border-radius: 50px;
   padding: 15px 20px;
@@ -285,12 +286,201 @@
   z-index: 2;
 }
 
-@media (max-width: 900px) {
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.services > h2 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.services .column1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.services .column1 .left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services .column1 .right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.services .column1 .right .group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.services .column1 .right .group p {
+  font-weight: 500;
+  font-size: 15px;
+}
+.services .column1 .right .group img {
+  width: 30px;
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 50px;
+  background-color: #918eff;
+}
+
+.services .column1 .right * {
+  margin: 10px 0;
+}
+.services h2 {
+  font-weight: 600;
+}
+
+.services .column1 .right h2 {
+  font-size: 20px;
+}
+
+.services .column1 .right button {
+  border-radius: 50px;
+  padding: 15px 30px;
+  border: 0;
+  background-color: black;
+  color: white;
+}
+
+.services .column1 .left img {
+  width: 100%;
+  max-width: 350px;
+}
+
+.services .column1:nth-of-type(2) .right {
+  align-items: center;
+  justify-content: center;
+}
+
+.foryou {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.foryou .inner {
+  width: 90%;
+  max-width: 800px;
+  height: 200px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #918eff;
+  padding: 5%;
+  border-radius: 20px;
+  color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+.foryou .inner h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.foryou .inner p {
+  text-align: center;
+  max-width: 300px;
+}
+
+.foryou .inner button {
+  padding: 10px 25px;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  border: 0;
+  cursor: pointer;
+}
+
+.foryou .inner * {
+  margin: 7px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.foryou .inner img:nth-of-type(1) {
+  position: absolute;
+  width: 50%;
+  left: -5%;
+  z-index: 1;
+}
+
+.foryou .inner img:nth-of-type(2) {
+  position: absolute;
+  width: 50%;
+  right: -10%;
+  transform: rotate(200deg);
+  top: -50%;
+  z-index: 1;
+}
+
+.loan footer {
+  background-color: #020121;
+  min-height: 200px;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  color: white;
+  margin-top: 20px;
+}
+
+.loan footer .socials {
+  position: absolute;
+  right: 5%;
+  top: 10px;
+}
+.loan footer h1 {
+  position: absolute;
+  left: 5%;
+  top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.loan .socials img {
+  width: 40px;
+  margin: 0 10px;
+}
+
+.loan footer ul {
+  display: flex;
+  margin-top: 30px;
+  justify-content: flex-end;
+}
+
+.loan footer li {
+  list-style: none;
+  margin: 0 10px;
+  text-transform: capitalize;
+}
+
+@media (max-width: 800px) {
   .mobile {
     display: none;
-  }
-
-  .loan {
   }
 
   .loan header {
@@ -401,5 +591,34 @@
     position: relative;
     height: 200px;
     background-color: #918eff;
+  }
+
+  .services .column1 {
+    flex-direction: column;
+  }
+
+  .services .column1 .left img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 15px;
+    max-width: 600px;
+  }
+
+  .services .column1 .right {
+    width: 100%;
+    padding-top: 20px;
+    justify-content: flex-start;
+  }
+
+  .services .column1 .left {
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .services .column1:nth-of-type(2) .right {
+    align-items: flex-start;
+    order: 2;
   }
 }
