@@ -492,6 +492,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 400px;
   }
 
   .hero .left {
@@ -559,9 +560,13 @@
   }
 
   .card {
-    width: 250px;
+    width: 90%;
     height: 290px;
     margin: 10px 0;
+  }
+
+  .card img {
+    max-width: 100px;
   }
 
   .loan .fair h2 {
